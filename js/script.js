@@ -32,7 +32,7 @@ var main = document.getElementById('main');
 
 // scanner function
 function scanner(){
-	alert("Here");
+	//alert("Here");
 	cordova.plugins.barcodeScanner.scan(
       function (result) {
           alert("We got a barcode\n" +
