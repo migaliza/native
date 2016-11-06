@@ -5,11 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
-		<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />-->
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
-		<link rel="stylesheet" href="vendor/wow/animate.css" />
-		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="../vendor/wow/animate.css" />
+		<link rel="stylesheet" href="../css/nativedroid2.css" />
 
 		<meta name="mobile-web-app-capable" content="yes">
 	 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -27,31 +26,48 @@
 			</div>
 
 			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Car Pool</h1>
+			
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Ashesi Car Pool</h1>
 			</div>
 
 			<div role="main" class="ui-content" data-inset="false" id="main" style="height:100%, width:100%">
-				<!--<p>Map</p>-->
-				<div id="barcodeScanner"><a href="#" class="ui-btn ui-btn-raised clr-primary" onClick="scanner();">Scanner</a></div>
-				<div id="contacts"><a href="#" class="ui-btn ui-btn-raised clr-primary" onClick="contacts();">Contacts</a></div>
-				<div id="mapCanvas" ></div>
-			</div>
+				<form>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="box">
+						<input type="text" name="fullname" id="fullname" value="" data-clear-btn="true" placeholder="full name">
 
+						<input type="text" name="username" id="username" value="" data-clear-btn="true" placeholder="username">
+
+
+                        <input type="email" name="email" id="email" value="" data-clear-btn="true" placeholder="email">
+
+                        <input type="text" name="phonenumber" id="phonenumber" value="" data-clear-btn="true" placeholder="Phone Number">
+
+                        <input type="password" name="password" id="password" value="" data-clear-btn="true" placeholder="password">
+
+                        <button class="ui-btn"><i class="zmdi zmdi-mail-send"></i> SIGNUP</button>
+
+                        <button class="ui-btn"><i class="zmdi zmdi-mail-send"></i> LOGIN</button>
+              
+                            
+				</form>
+				</div>
+				
 			
+
+			<!--Footer-->
 
 			<div data-role="footer" data-position="fixed">
 
 				<div class="row center-xs">
 					<div class="col-xs-4">
 						<div class="box">
-							<a href="user/signup.html" class="ui-btn ui-mini nd2-btn-icon-block"> SIGNUP</a>
+							<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-edit'></i> edit</a>
 						</div>
 					</div>
 					<div class="col-xs-4">
 						<div class="box">
-							<a href="user/login.html" class="ui-btn ui-mini nd2-btn-icon-block"> LOGIN</a>
+							<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-plus'></i> add</a>
 						</div>
 					</div>
 					<div class="col-xs-4">
@@ -61,7 +77,6 @@
 					</div>
 				</div>
 
-
 			</div>
 
 
@@ -69,7 +84,7 @@
 							
 
 		</div>
-		<script src="js/script.js"></script>
+		<script src="../js/script.js"></script>
 		<script src="cordova.js"></script>
 		<!--<script src="js/nativedroid2.js"></script>-->
 
@@ -79,10 +94,10 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-		<script src="vendor/waves/waves.min.js"></script>
-		<script src="vendor/wow/wow.min.js"></script>
-		<script src="js/nativedroid2.js"></script>
-		<script src="nd2settings.js"></script>
+		<script src="../vendor/waves/waves.min.js"></script>
+		<script src="../vendor/wow/wow.min.js"></script>
+		<script src="../js/nativedroid2.js"></script>
+		<script src="../nd2settings.js"></script>
 
 	</body>
 </html>

@@ -9,10 +9,12 @@ document.addEventListener("deviceReady", function(){
 	//});
 });
 
+//to call the map
 function onMapInit(){
 	var myLocation = new plugin.google.maps.LatLng(41.796875,140.757007);
 
 }
+
 function initMap(){
 	map = new google.maps.Map(document.getElementById('mapCanvas'),{
 		center: {lat: -34.397, lng: 150.644},
@@ -51,4 +53,29 @@ function scanner(){
           "orientation" : "landscape" // Android only (portrait|landscape), default unset so it rotates with the device
       }
    );
+}
+
+
+
+//access contacts
+function contacts(){
+  navigator.contactsPhoneNumbers.list(function(contacts) {
+      console.log(contacts.length + ' contacts found');
+      for(var i = 0; i < contacts.length; i++) {
+         console.log(contacts[i].id + " - " + contacts[i].displayName);
+         for(var j = 0; j < contacts[i].phoneNumbers.length; j++) {
+            var phone = contacts[i].phoneNumbers[j];
+            console.log("===> " + phone.type + "  " + phone.number + " (" + phone.normalizedNumber+ ")");
+         }
+      }
+   }, function(error) {
+      console.error(error);
+   });
+}
+
+//camera
+function camera(){
+	alert("Camera called");
+	
+
 }

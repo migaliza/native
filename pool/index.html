@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>nativeDroid II - jQueryMobile Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />-->
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="../vendor/wow/animate.css" />
+		<link rel="stylesheet" href="../css/nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="../examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed">
+				<a href="#leftpanel" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+				<h1>Pools</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false" id="main" style="height:100%, width:100%">
+
+				<!-- Simple Card with Title !-->
+
+				<div class="nd2-card">
+
+					<div class="card-title has-avatar">
+						<img class="card-avatar" src="//lorempixel.com/200/200/people/9/">
+						<h3 class="card-primary-title">Pool owner</h3>
+						<h5 class="card-subtitle">Destination</h5>
+					</div>
+
+					<div class="card-supporting-text has-action">
+						<p><strong>departure time: </strong> 4:00 pm</p> 
+						<p><strong>Number of People: </strong>4</p>
+						<p><strong>Cost: </strong> 20 Cedis</p>
+						<p><strong>People remaining ro fill: </strong> 3</p>
+					</div>
+
+					<div class="card-action">
+						<div class="row between-xs">
+							<div class="col-xs-4">
+								<div class="box">
+									<a href="#" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-mic'></i></a>
+									<a href="#" class="ui-btn ui-btn-inline ui-btn-fab"><i class='zmdi zmdi-videocam'></i></a>
+								</div>
+							</div>
+							<div class="col-xs-8 align-right">
+								<div class="box">
+									<a href="#joinPool" class="ui-btn ui-btn-inline">JOIN</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				
+			</div>
+
+				<!--Footer-->
+
+			<div data-role="footer" data-position="fixed">
+
+				<div class="row center-xs">
+					<div class="col-xs-4">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-edit'></i> Edit</a>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-plus'></i> Create</a>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-minus'></i> News</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			</div>
+			
+
+
+
+
+							
+
+		</div>
+		<script src="../js/script.js"></script>
+		<script src="cordova.js"></script>
+		<!--<script src="js/nativedroid2.js"></script>-->
+
+		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPflJXFtDl_8_ip9OqwxVdld7Bwdkp-go&callback=initMap"
+    async defer></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="../vendor/waves/waves.min.js"></script>
+		<script src="../vendor/wow/wow.min.js"></script>
+		<script src="../js/nativedroid2.js"></script>
+		<script src="../nd2settings.js"></script>
+
+	</body>
+</html>
